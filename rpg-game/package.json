@@ -25,6 +25,17 @@
   ],
   "author": "Student",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "collectCoverageFrom": [
+      "src/js/**/*.js",
+      "!src/js/game.js"
+    ]
+  },
   "dependencies": {
     "ajv": "^8.20.0",
     "core-js": "^3.49.0"
